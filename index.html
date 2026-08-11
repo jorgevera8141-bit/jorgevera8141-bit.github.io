@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jorge Vera — Field Developer</title>
+<title>Jorge Vera — Field Developer & AI Trainer</title>
 <style>
   :root{
     --navy:#002244;
@@ -351,14 +351,14 @@
 <!-- HERO -->
 <section>
   <div class="hero">
-    <div class="hero-eyebrow">Field Developer · Zacatecas, Mexico</div>
+    <div class="hero-eyebrow">Field Developer · AI Trainer · Zacatecas, Mexico</div>
     <h1 class="hero-name">Jorge<br><span>Vera</span></h1>
     <p class="hero-title">Building production software between shifts.</p>
     <p class="hero-desc">
       Irrigation technician by day, self-taught developer by necessity.
       I build real systems for real problems — a café POS deployed in Mexico,
       an orchard field operations tool running in Washington State,
-      a health tracking app for my family. Bilingual. No tutorials. Just production.
+      and AI model evaluation for enterprise platforms. Bilingual. No tutorials. Just production.
     </p>
     <div class="hero-ctas">
       <a href="#projects" class="btn-primary">See the work</a>
@@ -374,12 +374,13 @@
       I learned to build software the same way I learned irrigation — by doing it
       until it worked. Every system here runs in production, used by real people
       for real operations. <strong>14 years in the orchard.</strong> The last two
-      spent turning field problems into software solutions.
+      spent turning field problems into software solutions — and the last month
+      evaluating AI models for enterprise platforms.
     </div>
     <div class="about-stats">
       <div class="stat"><span class="stat-num">3</span><span class="stat-label">Live Systems</span></div>
       <div class="stat"><span class="stat-num">2</span><span class="stat-label">Languages</span></div>
-      <div class="stat"><span class="stat-num">20</span><span class="stat-label">Orchard Blocks</span></div>
+      <div class="stat"><span class="stat-num">35</span><span class="stat-label">AI Responses Scored</span></div>
       <div class="stat"><span class="stat-num">269</span><span class="stat-label">Menu Items</span></div>
     </div>
   </div>
@@ -395,16 +396,46 @@
 
   <div class="projects-grid">
 
+    <!-- ORCHARD FIELD MANAGER -->
+    <div class="project-card">
+      <span class="project-tag">Production · Field Use Daily · v2 2026</span>
+      <h3 class="project-name">Orchard Field Manager</h3>
+      <p class="project-desc">
+        Full-stack field operations system for McDougall Family Farming, Wenatchee Valley.
+        Migrated from Make.com/Airtable to a self-hosted Node.js + PostgreSQL backend on Railway.
+        Workers log irrigation sessions via NFC tags — tap to start, tap to end.
+        Auto-calculates real hours, sets completed, and official hours (sets × 12h) on session close.
+        Live timer with set counter visible during active sessions. Boss dashboard with Today view
+        for nightly verification. Weather alerts at 88°F/90°F trigger fogger recommendations.
+        Offline-capable PWA with session persistence and exponential backoff retry.
+      </p>
+      <div class="project-stack">
+        <span class="stack-tag">Node.js</span>
+        <span class="stack-tag">Express</span>
+        <span class="stack-tag">PostgreSQL</span>
+        <span class="stack-tag">Railway</span>
+        <span class="stack-tag">NFC</span>
+        <span class="stack-tag">PWA</span>
+        <span class="stack-tag">OpenWeatherMap API</span>
+        <span class="stack-tag">ntfy.sh</span>
+      </div>
+      <div class="project-links">
+        <a href="https://orchard-server-production.up.railway.app" target="_blank" class="project-link live">↗ Live App</a>
+        <a href="https://github.com/jorgevera8141-bit/orchard-server" target="_blank" class="project-link">GitHub</a>
+      </div>
+    </div>
+
     <!-- ORAMA POS -->
     <div class="project-card">
-      <span class="project-tag">Production · Deployed</span>
+      <span class="project-tag">Production · Deployed · Aguascalientes MX</span>
       <h3 class="project-name">Orama Café POS</h3>
       <p class="project-desc">
-        Full point-of-sale system built from scratch for a family café in Aguascalientes, Mexico.
-        PIN-based staff login with personal greetings, live mesa status, split payments across
-        cash/card/courtesy/loyalty, barista screen with push notifications, P&L dashboard,
-        corte de caja, and inventory management with 269 products and auto-generated product codes.
-        Replaced a third-party subscription system the owners were paying monthly for.
+        Complete point-of-sale system built from scratch for a family café in Aguascalientes, Mexico.
+        Replaced a paid third-party subscription with a fully owned custom solution.
+        PIN-based staff login with role selection, live table management, split payment processing
+        (cash/card/courtesy/loyalty), real-time barista notifications, printable receipts,
+        inventory management with 269 products and auto-generated codes, P&L reporting,
+        CSV exports, and corte de caja. Boss dashboard accessible via separate PIN route.
       </p>
       <div class="project-stack">
         <span class="stack-tag">Node.js</span>
@@ -420,29 +451,26 @@
       </div>
     </div>
 
-    <!-- ORCHARD MANAGER -->
+    <!-- AI EVALUATION -->
     <div class="project-card">
-      <span class="project-tag">Production · Field Use Daily</span>
-      <h3 class="project-name">Orchard Field Manager</h3>
+      <span class="project-tag">Professional · TikTok/Lifted Platform · July–August 2026</span>
+      <h3 class="project-name">AI Model Evaluation — Phase 2</h3>
       <p class="project-desc">
-        Field operations system for McDougall Family Farming, Wenatchee Valley.
-        Workers log irrigation sessions, fertilizer applications, and fuel from their phones
-        via NFC tags placed on each block. The manager app — built with a custom Seahawks-themed
-        hexagonal UI — shows live water alerts, block status, and season hour totals.
-        Foggers are excluded from the irrigation cycle to prevent false water alerts.
-        Data flows through Make.com automation into Airtable with AI-generated weekly summaries.
+        Completed structured evaluation of 35 AI model responses across 5 technical tasks
+        for an enterprise AI training platform. Tasks covered Make.com automation scenarios,
+        agricultural data analysis reports, staff training manuals, Node.js API endpoints,
+        and mobile irrigation PWA development. Scored 7 models per task using a 0–4 rubric
+        with detailed written reasoning submitted via Lark. Identified critical bugs including
+        UTC timestamp drift across 5 of 7 models, SQL-injection-vulnerable ID validation,
+        and confirmed duplicate model submissions byte-for-byte identical.
       </p>
       <div class="project-stack">
+        <span class="stack-tag">AI Evaluation</span>
+        <span class="stack-tag">Prompt Engineering</span>
+        <span class="stack-tag">Rubric Design</span>
         <span class="stack-tag">Make.com</span>
-        <span class="stack-tag">Airtable</span>
-        <span class="stack-tag">Apple Shortcuts</span>
-        <span class="stack-tag">NFC</span>
-        <span class="stack-tag">OpenWeatherMap API</span>
-        <span class="stack-tag">Claude API</span>
-        <span class="stack-tag">ntfy.sh</span>
-      </div>
-      <div class="project-links">
-        <a href="https://curly-hill-2c0d.jorgevera8141.workers.dev/irrigation.html" target="_blank" class="project-link live">↗ Field App</a>
+        <span class="stack-tag">Node.js</span>
+        <span class="stack-tag">Spanish/English</span>
       </div>
     </div>
 
@@ -512,9 +540,9 @@
       <div class="skill-group-title">AI & APIs</div>
       <ul class="skill-list">
         <li>Claude API</li>
+        <li>AI model evaluation</li>
         <li>OpenWeatherMap</li>
         <li>ntfy.sh notifications</li>
-        <li>AI evaluation (TikTok)</li>
       </ul>
     </div>
     <div class="skill-group">
@@ -536,7 +564,7 @@
     <h2 class="contact-title">Let's work together</h2>
     <p class="contact-sub">Available for automation, no-code, and full-stack projects.</p>
     <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-      <a href="https://www.upwork.com/freelancers/~010caefe8f3fb05d35?mp_source=share" target="_blank" class="btn-primary">Upwork Profile</a>
+      <a href="https://www.upwork.com/freelancers/~010caefe8f3fb05d35?mps_source=share" target="_blank" class="btn-primary">Upwork Profile</a>
       <a href="https://github.com/jorgevera8141-bit" target="_blank" class="btn-outline">GitHub</a>
     </div>
   </div>
